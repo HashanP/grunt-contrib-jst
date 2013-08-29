@@ -10,7 +10,10 @@
 
 module.exports = function(grunt) {
 
+    // Who uses lodash? Underscore FTW!
   var _ = require('lodash');
+  var ejs = require('ejs');
+  var us = require('underscore.string');
 
   // filename conversion for templates
   var defaultProcessName = function(name) { return name; };
@@ -50,7 +53,11 @@ module.exports = function(grunt) {
         var compiled, filename;
 
         try {
-          compiled = _.template(src, false, options.templateSettings).source;
+	    if(us(filepath).endsWith('.ejs')) {
+		compiled = ejs.compile(src, {}).toString();
+	    } else		
+		compiled = _.template(src, false, options.templateSettings).source;
+	    }
         } catch (e) {
           grunt.log.error(e);
           grunt.fail.warn('JST "' + filepath + '" failed to compile.');
