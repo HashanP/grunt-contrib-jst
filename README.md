@@ -61,7 +61,7 @@ options: {
 Type: `Object`
 Default: null
 
-The settings passed to underscore when compiling templates.
+The settings passed to underscore or ejs when compiling templates.
 
 ```js
 jst: {
