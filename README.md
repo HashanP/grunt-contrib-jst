@@ -151,6 +151,7 @@ jst: {
 
 ## Release History
 
+ * 2013-08-30   v0.5.2   EJS Support
  * 2013-07-14   v0.5.1   Display filepath when fails to compile.
  * 2013-03-06   v0.5.0   When `namespace` is false and `amd` is true, return templates directly from AMD wrapper. Rename `amdwrapper` option to `amd` to match grunt-contrib-handlebars.
  * 2013-02-15   v0.4.1   First official release for Grunt 0.4.0.
