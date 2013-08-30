@@ -1,6 +1,6 @@
 # grunt-contrib-jst [![Build Status](https://travis-ci.org/gruntjs/grunt-contrib-jst.png?branch=master)](https://travis-ci.org/gruntjs/grunt-contrib-jst)
 
-> Precompile Underscore templates to JST file.
+> Precompile Underscore & EJS templates to JST file.
 
 
 
@@ -130,6 +130,8 @@ options: {
 
 ### Usage Examples
 
+NB: Anything ending with .ejs is assumed to an EJS template, otherwise an underscore template
+
 ```js
 jst: {
   compile: {
@@ -139,7 +141,8 @@ jst: {
       }
     },
     files: {
-      "path/to/compiled/templates.js": ["path/to/source/**/*.html"]
+      "path/to/compiled/templates.js": ["path/to/source/**/*.html"],
+      "path/to/compiled/templates.ejs": ["path/to/source/**/*.ejs"]
     }
   }
 }
