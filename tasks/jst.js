@@ -53,11 +53,11 @@ module.exports = function(grunt) {
         var compiled, filename;
 
         try {
-	    if(us(filepath).endsWith('.ejs')) {
-		compiled = ejs.compile(src, _.extend(options.templateSettings, {client: true})).toString();
-	    } else		
-		compiled = _.template(src, false, options.templateSettings).source;
-	    }
+          if(us(filepath).endsWith('.ejs')) {
+      	compiled = ejs.compile(src, _.extend(options.templateSettings, {client: true})).toString();
+          } else {
+      	compiled = _.template(src, false, options.templateSettings).source;
+          }
         } catch (e) {
           grunt.log.error(e);
           grunt.fail.warn('JST "' + filepath + '" failed to compile.');
