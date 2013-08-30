@@ -53,7 +53,7 @@ module.exports = function(grunt) {
         var compiled, filename;
 
         try {
-          if(us(filepath).endsWith('.ejs')) {
+	    if(us.endsWith(filepath, '.ejs')) {
       	compiled = ejs.compile(src, _.extend(options.templateSettings, {client: true})).toString();
           } else {
       	compiled = _.template(src, false, options.templateSettings).source;
