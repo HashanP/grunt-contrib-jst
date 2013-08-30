@@ -1,18 +1,18 @@
 {
-  "name": "grunt-contrib-jst",
-  "description": "Precompile Underscore templates to JST file.",
-  "version": "0.5.2",
-  "homepage": "https://github.com/gruntjs/grunt-contrib-jst",
+  "name": "grunt-contrib-jst-2",
+  "description": "Precompile Underscore & EJS templates to JST file.",
+  "version": "0.5.4",
+  "homepage": "https://github.com/gruntjs/grunt-contrib-jst-2",
   "author": {
     "name": "Grunt Team",
     "url": "http://gruntjs.com/"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/gruntjs/grunt-contrib-jst.git"
+    "url": "git://github.com/gruntjs/grunt-contrib-jst-2.git"
   },
   "bugs": {
-    "url": "https://github.com/gruntjs/grunt-contrib-jst/issues"
+    "url": "https://github.com/gruntjs/grunt-contrib-jst-2/issues"
   },
   "licenses": [
     {
